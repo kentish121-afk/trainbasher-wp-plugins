@@ -1,42 +1,38 @@
 === Spotter Contributions & Moderation (GDPR & OSA Compliant) ===
 Contributors: trainbasher.com
-Tags: user-generated-content, submissions, moderation, gdpr, online-safety-act, bus, photography, community
+Tags: user-generated-content, moderation, gdpr, online-safety-act, bus-photography, community
 Requires at least: 6.0
 Tested up to: 6.5
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 
 == Description ==
 
-A complete, compliance-first system for allowing bus and vehicle spotters to submit sightings, photos, and corrections to your site.
+v1.1.0 - Full-featured, compliance-first plugin for spotter submissions on bus/vehicle photography sites.
 
-Key features:
-- Public frontend submission form (shortcode)
-- Photo upload with secure handling
-- Full moderation queue with approve/reject/flag actions
-- User reputation/leaderboard system
-- Built-in GDPR compliance: consent capture with timestamp, data minimization, privacy policy integration, right to erasure support
-- UK Online Safety Act 2023 compliance: age declaration, user flagging/reporting, manual review for harmful content, audit logging
+New in v1.1.0:
+- AJAX autocomplete search for linking to existing Vehicle/Bus posts (your custom CPTs)
+- Auto-attach submissions to vehicle posts OR auto-create new vehicle posts on approval
+- Self-service user dashboard shortcode with GDPR data export (JSON) and deletion request forms
+- Advanced flagging with categories (Spam, Inappropriate, Harmful/Illegal, etc.) + basic banned-word content filtering
+- Public [top_spotters_leaderboard] shortcode
+- Integration hooks & filters for Post Views Counter, Related Posts, importers, and your other plugins
 
-Designed specifically for niche enthusiast sites like trainbasher.com but fully extensible.
+Core features retained from v1.0: Consent logging, age declaration, moderation queue, reputation system.
 
 == Installation ==
+1. Upload folder to wp-content/plugins/
+2. Activate
+3. Use shortcodes on pages
+4. Configure in Settings & Compliance
 
-1. Upload the plugin folder to /wp-content/plugins/
-2. Activate via Plugins screen
-3. Add the shortcode [spotter_submission_form] to any page
-4. Configure settings under Spotter Contributions > Settings & Compliance
-5. Moderate submissions via the dedicated queue
-
-== Frequently Asked Questions ==
-
-= Is this fully GDPR compliant out of the box? =
-It provides strong foundations (consent, minimization, logging). You should still have a proper Privacy Policy page and may want to add self-service data request forms.
-
-= How does it help with the Online Safety Act? =
-Age-appropriate checkboxes, easy user reporting (flagging), and a structured moderation process for reviewing potentially illegal or harmful content.
+== Shortcodes ==
+- [spotter_submission_form] — Public submission form with AJAX vehicle search
+- [spotter_user_dashboard] — Logged-in users: view submissions + GDPR tools
+- [top_spotters_leaderboard limit="10"] — Public top contributors
 
 == Changelog ==
-
+= 1.1.0 =
+* Major enhancements as requested: AJAX search, auto-attach/create, user GDPR dashboard, advanced flagging + filtering, leaderboard shortcode, integration hooks.
 = 1.0.0 =
-* Initial release with full compliance features, form, queue, reputation, and settings.
+* Initial release with core compliance and moderation features.
