@@ -1,0 +1,22 @@
+/* TrainBasher Bus Search - Admin Styles */
+#tb-migrate-btn {
+    margin-top: 10px;
+}
+.progress-bar {
+    background: #f0f0f0;
+    height: 22px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #dcdcde;
+}
+#tb-progress-fill {
+    background: #2271b1;
+    height: 100%;
+    transition: width 0.4s ease;
+}
+#tb-migrate-results {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f6f7f7;
+    border-radius: 4px;
+}
