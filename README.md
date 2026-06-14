@@ -1,4 +1,4 @@
-# TrainBasher WP Plugins
+# Trainbasher.com WP Plugins
 
 Custom WordPress plugins built for [trainbasher.com](https://trainbasher.com/) — the excellent bus photography archive.
 
